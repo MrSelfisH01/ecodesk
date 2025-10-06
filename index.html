@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecodesk - Where Nature Meets Technology</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body data-page="home">
+
+    <div id="loader">
+      <div class="loader-animation">
+        <div class="leaf"></div>
+      </div>
+    </div>
+
+    <div class="bg-gradient"></div>
+    <canvas class="particles-bg"></canvas>
+
+    <header>
+      <div class="logo">Ecodesk</div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Ecodesk — Reliable Backoffice & Customer Support</h1>
+          <p>Trusted partners for backoffice operations, customer support, and high-volume data work — delivered with predictable SLAs and secure processes.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary"><span>Get Started</span></a>
+            <a href="#" class="btn"><span>Learn More</span></a>
+          </div>
+        </div>
+        <div id="globe-container"></div>
+      </section>
+
+      <section class="split-section">
+        <div class="split-half design-side">
+          <h2>Design-forward Experience</h2>
+          <p>We craft polished customer experiences and intuitive interfaces. Our design team focuses on clarity, accessibility, and conversion-driven flows — presented here with a nature-inspired visual theme.</p>
+        </div>
+        <div class="split-half ops-side">
+          <h2>Technology & Operations</h2>
+          <p>We provide BPO and technology services that improve efficiency and reliability. From automated workflows to dedicated support teams, we help clients scale securely and sustainably (visual theme only).</p>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services">
+        <h2 class="section-title">What We Do</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Customer Experience</h3>
+            <p>Omnichannel support, knowledge-base management, and empathetic customer care tailored to your brand.</p>
+          </div>
+          <div class="service-card">
+            <h3>Data & Analytics</h3>
+            <p>Actionable reporting, process optimization, and insights that drive better business outcomes.</p>
+          </div>
+          <div class="service-card">
+            <h3>Backoffice Support</h3>
+            <p>Data entry, document processing, order management, and reconciliation services processed to strict quality and turnaround targets.</p>
+          </div>
+          <div class="service-card">
+            <h3>Data Entry & Processing</h3>
+            <p>Accurate, high-throughput data capture and validation — from OCR cleanup to structured database imports and ongoing maintenance.</p>
+          </div>
+          <div class="service-card">
+            <h3>Customer Support</h3>
+            <p>Omnichannel support teams trained to your product and policies, with quality assurance and escalation workflows.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <h2 class="section-title">Trusted by Teams Worldwide</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">“Ecodesk helped us cut response times in half while improving satisfaction.” — Product Ops Lead, FinTech</blockquote>
+          <blockquote class="testimonial">“Smooth integration and a proactive support team — they feel like part of our company.” — Head of Support, SaaS</blockquote>
+        </div>
+      </section>
+
+      <!-- How we work -->
+      <section class="how-we-work">
+        <h2 class="section-title">How We Work</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Onboarding</h3>
+            <p>Fast, documented onboarding with role-based training, knowledge transfer, and pilot runs to validate KPIs.</p>
+          </div>
+          <div class="service-card">
+            <h3>Delivery</h3>
+            <p>Dedicated teams, clear SLAs, and daily reporting so you always know status and performance.</p>
+          </div>
+          <div class="service-card">
+            <h3>Continuous Improvement</h3>
+            <p>Monthly reviews and process optimization to reduce cost and increase accuracy over time.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat-card">
+          <div class="stat-number" data-target="247">0</div>
+          <div class="stat-label">24/7 Support</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="99">0</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Ecodesk</h3>
+          <p>Leading the BPO industry with sustainable, technology-driven solutions that benefit both businesses and the planet.</p>
+          <div class="eco-icons">🌿 ♻️ 🌍 ⚡</div>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <a href="#">Customer Support</a>
+          <a href="#">Data Processing</a>
+          <a href="#">IT Solutions</a>
+          <a href="#">Digital Marketing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: info@ecodesk.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <p>Address: 123 Green Tech Plaza</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ecodesk. All rights reserved. Powered by sustainable innovation.</p>
+      </div>
+    </footer>
+  </body>
+</html>
