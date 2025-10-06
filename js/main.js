@@ -23,6 +23,18 @@
       }
     });
 
+    // Header scroll
+    const header = document.querySelector('header');
+    if (header) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    }
+
     // Custom cursor removed for performance — no listeners attached here.
 
     // Particles Background
@@ -108,10 +120,12 @@
     function closeMenu() {
       if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
       if (mainNav) mainNav.classList.remove('open');
+      document.body.classList.remove('menu-open');
     }
     function openMenu() {
       if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
       if (mainNav) mainNav.classList.add('open');
+      document.body.classList.add('menu-open');
     }
     if (menuToggle && mainNav) {
       menuToggle.addEventListener('click', () => {
@@ -202,7 +216,7 @@
         counters.forEach((c) => observer.observe(c));
       }
 
-      // GSAP small hero entrance (if available)
+      
       if (window.gsap && window.ScrollTrigger) {
         try {
           gsap.registerPlugin(ScrollTrigger);

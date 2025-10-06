@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# Playwright-specific cache
+.playwright-mcp/
+
+# Test artifacts (e.g., screenshots from test.js)
+screenshot-*.png
+
+# NOTE: It is standard practice to commit the following files to version control.
+# They are ignored here as per the request.
+package.json
+package-lock.json
+test.js
